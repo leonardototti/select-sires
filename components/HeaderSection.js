@@ -4,6 +4,12 @@ import styled, { css } from 'styled-components'
 import Menu from '../components/Menu';
 import Search from '../components/Search';
 
+const Section = styled.section`
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+`
+
 const NavbarContainer = styled.nav`
   display: flex;
   align-items: center;
@@ -34,12 +40,10 @@ const SliderBanner = styled.div`
 
   ${props => props.first && css`
     background-image: url('/slider/banner-slider/01.png');
-    filter: brightness(0.8);
   `}
 
   ${props => props.second && css`
     background-image: url('/slider/banner-slider/02.png');
-    filter: brightness(0.3);
   `}
 `
 
@@ -130,7 +134,7 @@ const SlideContent = styled.div`
 export default function HeaderSection() {
   return (
     <>
-      <section id="header-section">
+      <Section>
         <NavbarContainer>
           <Search />
           <Logo className="logo" src="/logo.png" alt="Logo" width="250px" height="auto"/>
@@ -139,7 +143,7 @@ export default function HeaderSection() {
         <Splide style={{background: 'black'}} options={{
           fixedHeight: '550px',
           arrows: false,
-          // autoplay: true,
+          autoplay: true,
           interval: 10000,
           drag: false,
           pauseOnFocus: false,
@@ -171,7 +175,7 @@ export default function HeaderSection() {
             </SlideContent>
           </SplideSlide>
         </Splide>
-      </section>
+      </Section>
     </>
   )
 }

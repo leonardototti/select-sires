@@ -11,7 +11,6 @@ const SearchContainer = styled.div`
   border-radius: 5px;
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
 `
-
 export default function Search() {
   return (
     <>

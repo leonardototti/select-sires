@@ -20,9 +20,3 @@ body {
 .splide__pagination__page.is-active {
   background: #ed1c24;
 }
-
-#header-section {
-  position: relative;
-  width: 100%;
-  max-width: 100vw;
-}
