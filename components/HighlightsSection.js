@@ -63,7 +63,8 @@ const SliderButtonsContainer = styled.div`
     display: grid;
     place-items: center;
     user-select: none;
-
+    cursor: pointer;
+    
     img {
       cursor: pointer;
     }
