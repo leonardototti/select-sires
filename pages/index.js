@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import HeaderSection from '../components/HeaderSection'
+import HighlightsSection from '../components/HighlightsSection'
+import ProgramsSection from '../components/ProgramsSection'
 import SearchSection from '../components/SearchSection'
 
 export default function Home() {
@@ -9,9 +11,9 @@ export default function Home() {
         <title>Select Sires do Brasil</title>
       </Head>
       <HeaderSection />
-      
       <SearchSection />
-      <div style={{padding: '500px 20px'}} />
+      <HighlightsSection />
+      <ProgramsSection />
     </>
   )
 }

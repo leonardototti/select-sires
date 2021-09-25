@@ -28,6 +28,7 @@ const Logo = styled.img`
   left: 50%;
   transform: translateX(-50%);
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+  user-select: none;
 `
 
 const SliderBanner = styled.div`
@@ -105,6 +106,8 @@ const SlideContent = styled.div`
   ${props => props.second && css`
     .slide-play {
       margin-top: 80px;
+      user-select: none;
+      pointer-events: none;
     }
     
     .slide-title {
@@ -121,6 +124,7 @@ const SlideContent = styled.div`
       background-color: #ed1c24;
       border-radius: 6px;
       padding: 9px 16px;
+      user-select: none;
 
       color: #fff;
       font-family: Inter;
@@ -134,7 +138,7 @@ const SlideContent = styled.div`
 export default function HeaderSection() {
   return (
     <>
-      <Section>
+      <Section id="header-section">
         <NavbarContainer>
           <Search />
           <Logo className="logo" src="/logo.png" alt="Logo" width="250px" height="auto"/>
@@ -150,7 +154,7 @@ export default function HeaderSection() {
           speed: 800,
           rewind: true
         }}>
-          <SplideSlide first>
+          <SplideSlide>
             <SliderBanner first/>
             <SlideContent first>
               <h1 className="slide-title">Select Sires do Brasil</h1>
@@ -158,7 +162,7 @@ export default function HeaderSection() {
               <a href="#" className="slide-cta">Nossas soluções</a>
             </SlideContent>
           </SplideSlide>
-          <SplideSlide second>
+          <SplideSlide>
             <SliderBanner second/>
             <SlideContent second>
               <img src="/icons/playbutton.svg" className="slide-play" width="70px" height="70px"/>
@@ -166,7 +170,7 @@ export default function HeaderSection() {
               <span className="slide-badge">Ao vivo</span>
             </SlideContent>
           </SplideSlide>
-          <SplideSlide first>
+          <SplideSlide>
           <SliderBanner first/>
             <SlideContent first>
               <h1 className="slide-title">Select Sires do Brasil</h1>

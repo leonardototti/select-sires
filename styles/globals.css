@@ -8,15 +8,55 @@ body {
   box-sizing: border-box;
 }
 
-.splide__pagination {
+#header-section .splide__pagination {
   bottom: 50px;
 }
 
-.splide__pagination__page {
-  background: #f2f2f2;
-  margin: 5px;
+#header-section .splide__pagination__page {
+  background: #fff;
+  margin: 7px;
+}
+
+#highlights-section .splide__pagination, #programs-section .splide__pagination {
+  left: 50px;
+  bottom: -90px;
+}
+
+#highlights-section .splide__pagination__page, #programs-section .splide__pagination__page {
+  background: rgba(0,0,0,.2);
+  margin: 7px;
 }
 
 .splide__pagination__page.is-active {
-  background: #ed1c24;
+  background: #ed1c24!important;
+  opacity: 1!important;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  content: ""!important;
+}
+
+.swiper-button-disabled {
+  opacity: .2;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-pagination {
+  text-align: left!important;
+  width: fit-content!important;
+  transition: 1s scale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  margin: 7px!important;
+  transition: 1s scale;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ed1c24!important;
+  transform: scale(1.4)!important;
 }

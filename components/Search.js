@@ -10,6 +10,7 @@ const SearchContainer = styled.div`
   place-items: center;
   border-radius: 5px;
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+  user-select: none;
 `
 export default function Search() {
   return (

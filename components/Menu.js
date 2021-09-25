@@ -10,6 +10,7 @@ const MenuButton = styled.button`
   align-items: center;
   justify-content: center;
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+  user-select: none;
 
   img {
     margin-right: 15px;

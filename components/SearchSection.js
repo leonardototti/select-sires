@@ -26,6 +26,7 @@ const Select = styled.button`
   align-items: center;
   justify-content: center;
   position: relative;
+  user-select: none;
 
   span {
     color: #000;
