@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap';
 
 const Section = styled.section`
   width: 100%;
-  padding: 60px 0px;
+  padding: 60px 0px 35px;
 
   h2 {
     margin: 0!important;
@@ -55,7 +55,7 @@ const SliderButtonsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 40px;
+  margin-top: 60px;
 
   div {
     margin: 0 5px;

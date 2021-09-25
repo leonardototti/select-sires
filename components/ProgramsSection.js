@@ -5,9 +5,8 @@ import { Container } from 'react-bootstrap';
 
 const Section = styled.section`
   width: 100%;
-  padding: 60px 0px 40px;
+  padding: 60px 0px 35px;
   background-color: #f8f8f8;
-  margin-top: 80px;
 
   h2 {
     margin: 0!important;
