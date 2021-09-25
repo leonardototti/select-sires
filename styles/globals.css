@@ -42,14 +42,6 @@ body {
   pointer-events: none;
 }
 
-.swiper-pagination {
-  text-align: left!important;
-  width: fit-content!important;
-  transition: 1s scale;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .swiper-pagination-bullet {
   margin: 7px!important;
@@ -59,4 +51,13 @@ body {
 .swiper-pagination-bullet-active {
   background: #ed1c24!important;
   transform: scale(1.4)!important;
+}
+
+#highlights-section .swiper-pagination, #programs-section .swiper-pagination {
+  text-align: left!important;
+  width: fit-content!important;
+  transition: 1s scale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

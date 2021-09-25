@@ -94,7 +94,6 @@ export default function HighlightsSection() {
               prevEl: '.slider-button-last'
             }}
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
           >
             <SwiperSlide>
               <img src="/slider/highlights-slider/01.png" width="100%" height="auto"/>

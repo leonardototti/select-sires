@@ -3,6 +3,7 @@ import HeaderSection from '../components/HeaderSection'
 import HighlightsSection from '../components/HighlightsSection'
 import ProgramsSection from '../components/ProgramsSection'
 import SearchSection from '../components/SearchSection'
+import StampsSection from '../components/StampsSection'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SearchSection />
       <HighlightsSection />
       <ProgramsSection />
+      <StampsSection />
     </>
   )
 }
