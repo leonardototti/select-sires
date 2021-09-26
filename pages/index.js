@@ -11,6 +11,7 @@ import { useState } from 'react'
 import Modal from 'react-modal'
 import TestimoniesSection from '../components/TestimoniesSection'
 import PostsSection from '../components/PostsSection'
+import AboutSection from '../components/AboutSection'
 
 Modal.setAppElement('#__next');
 
@@ -49,6 +50,7 @@ export default function Home() {
       <CatalogsSection />
       <TestimoniesSection />
       <PostsSection />
+      <AboutSection />
     </>
   )
 }

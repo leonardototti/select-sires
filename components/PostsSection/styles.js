@@ -3,6 +3,11 @@ import styled from 'styled-components'
 export const Section = styled.section`
   background-color: #000;
   padding: 50px 20px;
+
+  img {
+    user-select: none;
+    pointer-events: none;
+  }
 `
 
 export const PostTitle = styled.h2`
