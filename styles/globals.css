@@ -17,14 +17,13 @@ body {
   margin: 7px;
 }
 
-#highlights-section .splide__pagination, #programs-section .splide__pagination {
+#highlights-section .splide__pagination, #programs-section .splide__pagination, #testimonies-section .splide__pagination {
   left: 50px;
   bottom: -90px;
 }
 
-#highlights-section .splide__pagination__page, #programs-section .splide__pagination__page {
+#highlights-section .splide__pagination__page, #programs-section .splide__pagination__page, #testimonies-section .splide__pagination__page {
   background: rgba(0,0,0,.2);
-  margin: 7px;
 }
 
 .splide__pagination__page.is-active {
@@ -53,7 +52,7 @@ body {
   transform: scale(1.4)!important;
 }
 
-#highlights-section .swiper-pagination, #programs-section .swiper-pagination {
+#highlights-section .swiper-pagination, #programs-section .swiper-pagination, #testimonies-section .swiper-pagination {
   text-align: left!important;
   width: fit-content!important;
   transition: 1s scale;
