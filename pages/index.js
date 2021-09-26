@@ -12,6 +12,7 @@ import Modal from 'react-modal'
 import TestimoniesSection from '../components/TestimoniesSection'
 import PostsSection from '../components/PostsSection'
 import AboutSection from '../components/AboutSection'
+import RepresentativesSection from '../components/RepresentativesSection'
 
 Modal.setAppElement('#__next');
 
@@ -51,6 +52,7 @@ export default function Home() {
       <TestimoniesSection />
       <PostsSection />
       <AboutSection />
+      <RepresentativesSection />
     </>
   )
 }
