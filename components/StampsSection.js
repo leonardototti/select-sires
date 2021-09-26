@@ -1,7 +1,9 @@
 import styled from 'styled-components'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper';
-import { Container } from 'react-bootstrap';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Autoplay } from 'swiper'
+import { Container } from 'react-bootstrap'
+import { useState } from 'react'
+import stamps from '../utils/stamps'
 
 const Section = styled.section`
   width: 100%;
@@ -41,9 +43,10 @@ const PolygonPlaceholder = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  transition: background-image .2s;
+  transition: background-image .4s;
   display: grid;
   place-items: center;
+  cursor: pointer;
 
   &:hover {
     background-image: url('/slider/stamps-slider/polygon-hover.png');
@@ -78,7 +81,13 @@ const SliderButtonsContainer = styled.div`
   }
 `
 
-export default function StampsSection() {
+export default function StampsSection({ onOpenStampModal, setStampId }) {
+
+  function handleOpenModal(stampId) {
+    onOpenStampModal()
+    setStampId(stampId)
+  }
+
   return (
     <>
       <Section id="stamps-section">
@@ -89,7 +98,7 @@ export default function StampsSection() {
             spaceBetween={24}
             slidesPerView={6}
             autoplay={{
-              delay: 6000,
+              delay: 4000,
               disableOnInteraction: false,
               pauseOnMouseEnter: true
             }}
@@ -97,87 +106,22 @@ export default function StampsSection() {
               clickable: true,
               el: '.slider-pagination'
             }}
+            simulateTouch={false}
           >
-            <SwiperSlide>
-              <SlideContainer>
-                <PolygonPlaceholder>
-                  <img src="/slider/stamps-slider/01.png" />
-                </PolygonPlaceholder>
-                <StampName>GFORCE™</StampName>
-              </SlideContainer>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SlideContainer>
-                <PolygonPlaceholder>
-                  <img src="/slider/stamps-slider/02.png" />
-                </PolygonPlaceholder>
-                <StampName>PROGENY PROVEN</StampName>
-              </SlideContainer>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SlideContainer>
-                <PolygonPlaceholder>
-                  <img src="/slider/stamps-slider/03.png" />
-                </PolygonPlaceholder>
-                <StampName>GFORCE™ +</StampName>
-              </SlideContainer>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SlideContainer>
-                <PolygonPlaceholder>
-                  <img src="/slider/stamps-slider/04.png" />
-                </PolygonPlaceholder>
-                <StampName>FERTILITYPRO®</StampName>
-              </SlideContainer>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SlideContainer>
-                <PolygonPlaceholder>
-                  <img src="/slider/stamps-slider/05.png" />
-                </PolygonPlaceholder>
-                <StampName>GENDER SELECTED™ SEXED ULTRA™</StampName>
-              </SlideContainer>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SlideContainer>
-                <PolygonPlaceholder>
-                  <img src="/slider/stamps-slider/06.png" />
-                </PolygonPlaceholder>
-                <StampName>SHOWCASE™</StampName>
-              </SlideContainer>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SlideContainer>
-                <PolygonPlaceholder>
-                  <img src="/slider/stamps-slider/01.png" />
-                </PolygonPlaceholder>
-                <StampName>GFORCE™</StampName>
-              </SlideContainer>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SlideContainer>
-                <PolygonPlaceholder>
-                  <img src="/slider/stamps-slider/02.png" />
-                </PolygonPlaceholder>
-                <StampName>PROGENY PROVEN</StampName>
-              </SlideContainer>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <SlideContainer>
-                <PolygonPlaceholder>
-                  <img src="/slider/stamps-slider/03.png" />
-                </PolygonPlaceholder>
-                <StampName>GFORCE™ +</StampName>
-              </SlideContainer>
-            </SwiperSlide>
+            {
+              stamps.map((stamp) => {
+                return (
+                  <SwiperSlide key={stamp.id}>
+                    <SlideContainer>
+                      <PolygonPlaceholder onClick={() => handleOpenModal(stamp.id)}>
+                        <img src={`/slider/stamps-slider/${stamp.id >= 10 ? '' : '0'}${stamp.id}.png`} />
+                      </PolygonPlaceholder>
+                      <StampName>{stamp.name}</StampName>
+                    </SlideContainer>
+                  </SwiperSlide>
+                )
+              })
+            }
 
             <SliderButtonsContainer>
               <div className="slider-pagination"></div>

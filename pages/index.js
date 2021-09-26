@@ -4,8 +4,26 @@ import HighlightsSection from '../components/HighlightsSection'
 import ProgramsSection from '../components/ProgramsSection'
 import SearchSection from '../components/SearchSection'
 import StampsSection from '../components/StampsSection'
+import StampModal from '../components/StampModal'
+
+import { useState } from 'react'
+import Modal from 'react-modal'
+
+Modal.setAppElement('#__next');
 
 export default function Home() {
+
+  const [isStampModalOpen, setIsStampModalOpen] = useState(false);
+  const [stampId, setStampId] = useState(1);
+  
+  function handleOpenStampModal() {
+    setIsStampModalOpen(true);
+  }
+
+  function handleCloseStampModal() {
+    setIsStampModalOpen(false);
+  }
+
   return (
     <>
       <Head>
@@ -15,7 +33,19 @@ export default function Home() {
       <SearchSection />
       <HighlightsSection />
       <ProgramsSection />
-      <StampsSection />
+
+      <StampsSection
+        onOpenStampModal={handleOpenStampModal}
+        setStampId={setStampId}
+      />
+
+      <StampModal
+        isOpen={isStampModalOpen}
+        onRequestClose={handleCloseStampModal}
+        stampId={stampId}
+      >
+
+      </StampModal>
     </>
   )
 }

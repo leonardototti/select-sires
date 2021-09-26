@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import 'splide-nextjs/splide/dist/css/themes/splide-default.min.css';
+import 'bootstrap/dist/css/bootstrap-grid.min.css'
+import 'splide-nextjs/splide/dist/css/themes/splide-default.min.css'
 import '../styles/globals.css'
 
 import 'swiper/css'
