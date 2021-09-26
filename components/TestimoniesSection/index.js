@@ -1,6 +1,6 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper';
-import { Container } from 'react-bootstrap';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Autoplay } from 'swiper'
+import { Container } from 'react-bootstrap'
 import { Section, HeaderContainer, SeeMore, AuthorName, TestimonyContainer, SliderButtonsContainer } from './styles'
 
 export default function TestimoniesSection() {
@@ -25,7 +25,6 @@ export default function TestimoniesSection() {
             prevEl: '.slider-button-last'
           }}
           pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
         >
           <SwiperSlide>
             <TestimonyContainer>

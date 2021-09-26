@@ -10,6 +10,7 @@ import CatalogsSection from '../components/CatalogsSection'
 import { useState } from 'react'
 import Modal from 'react-modal'
 import TestimoniesSection from '../components/TestimoniesSection'
+import PostsSection from '../components/PostsSection'
 
 Modal.setAppElement('#__next');
 
@@ -47,6 +48,7 @@ export default function Home() {
       </StampModal>
       <CatalogsSection />
       <TestimoniesSection />
+      <PostsSection />
     </>
   )
 }
