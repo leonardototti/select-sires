@@ -5,6 +5,7 @@ import ProgramsSection from '../components/ProgramsSection'
 import SearchSection from '../components/SearchSection'
 import StampsSection from '../components/StampsSection'
 import StampModal from '../components/StampModal'
+import CatalogsSection from '../components/CatalogsSection'
 
 import { useState } from 'react'
 import Modal from 'react-modal'
@@ -33,19 +34,17 @@ export default function Home() {
       <SearchSection />
       <HighlightsSection />
       <ProgramsSection />
-
       <StampsSection
         onOpenStampModal={handleOpenStampModal}
         setStampId={setStampId}
       />
-
       <StampModal
         isOpen={isStampModalOpen}
         onRequestClose={handleCloseStampModal}
         stampId={stampId}
       >
-
       </StampModal>
+      <CatalogsSection />
     </>
   )
 }

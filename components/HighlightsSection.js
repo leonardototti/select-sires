@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper';
 import { Container } from 'react-bootstrap';
 
