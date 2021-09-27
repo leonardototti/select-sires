@@ -13,6 +13,7 @@ import TestimoniesSection from '../components/TestimoniesSection'
 import PostsSection from '../components/PostsSection'
 import AboutSection from '../components/AboutSection'
 import RepresentativesSection from '../components/RepresentativesSection'
+import NewsSection from '../components/NewsSection'
 
 Modal.setAppElement('#__next');
 
@@ -53,6 +54,7 @@ export default function Home() {
       <PostsSection />
       <AboutSection />
       <RepresentativesSection />
+      <NewsSection />
     </>
   )
 }

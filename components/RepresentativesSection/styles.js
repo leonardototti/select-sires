@@ -5,7 +5,7 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 20px 10px;
+  padding: 50px 20px 15px;
   background-color: #000;
 
   .toggle-map-container {
@@ -39,7 +39,7 @@ export const SelectState = styled.button`
   font-size: 18px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
   position: relative;
   padding: 0 15px;
   cursor: pointer;
@@ -60,6 +60,7 @@ export const ToggleMap = styled.a`
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 10px;
   padding: 25px 30px;
   cursor: pointer;
   user-select: none;
