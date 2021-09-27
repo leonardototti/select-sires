@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const MenuButton = styled.button`
+export const MenuButton = styled.button`
   background: #fff;
   border-radius: 50px;
   padding: 20px 35px;
@@ -14,6 +14,8 @@ const MenuButton = styled.button`
 
   img {
     margin-right: 15px;
+    filter: grayscale(1);
+    transition: filter 0.3s;
   }
 
   span {
@@ -21,16 +23,17 @@ const MenuButton = styled.button`
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
+
+    transition: color 0.3s;
+  }
+
+  &:hover {
+    img {
+      filter: grayscale(0);
+    }
+
+    span {
+      color: #ed1c24;
+    }
   }
 `
-
-export default function Menu() {
-  return (
-    <>
-      <MenuButton>
-        <img src="/icons/burger.svg" alt="Ícone do menu" width="19px" height="auto"/>
-        <span>Menu</span>
-      </MenuButton>
-    </>
-  )
-}
