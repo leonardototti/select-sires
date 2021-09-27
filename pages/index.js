@@ -15,6 +15,7 @@ import AboutSection from '../components/AboutSection'
 import RepresentativesSection from '../components/RepresentativesSection'
 import NewsSection from '../components/NewsSection'
 import NewsletterSection from '../components/NewsletterSection'
+import Footer from '../components/Footer'
 
 Modal.setAppElement('#__next');
 
@@ -57,6 +58,7 @@ export default function Home() {
       <RepresentativesSection />
       <NewsSection />
       <NewsletterSection />
+      <Footer />
     </>
   )
 }

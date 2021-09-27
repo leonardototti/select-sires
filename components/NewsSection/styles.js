@@ -11,6 +11,10 @@ export const Section = styled.section`
     color: #000;
     font-size: 30px;
   }
+
+  img {
+    user-select: none;
+  }
 `
 
 export const HeaderContainer = styled.div`
