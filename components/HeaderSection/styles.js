@@ -1,16 +1,12 @@
-import Head from 'next/head'
-import { Splide, SplideSlide } from 'splide-nextjs/react-splide';
 import styled, { css } from 'styled-components'
-import Menu from '../components/Menu';
-import Search from '../components/Search';
 
-const Section = styled.section`
+export const Section = styled.section`
   position: relative;
   width: 100%;
   max-width: 100vw;
 `
 
-const NavbarContainer = styled.nav`
+export const NavbarContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,7 +18,7 @@ const NavbarContainer = styled.nav`
   padding: 60px;
 `;
 
-const Logo = styled.img`
+export const Logo = styled.img`
   position: absolute;
   top: 30px;
   left: 50%;
@@ -31,7 +27,7 @@ const Logo = styled.img`
   user-select: none;
 `
 
-const SliderBanner = styled.div`
+export const SliderBanner = styled.div`
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -48,7 +44,7 @@ const SliderBanner = styled.div`
   `}
 `
 
-const SlideContent = styled.div`
+export const SlideContent = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -134,52 +130,3 @@ const SlideContent = styled.div`
     }
   `}
 `
-
-export default function HeaderSection() {
-  return (
-    <>
-      <Section id="header-section">
-        <NavbarContainer>
-          <Search />
-          <Logo className="logo" src="/logo.png" alt="Logo" width="250px" height="auto"/>
-          <Menu />
-        </NavbarContainer>
-        <Splide style={{background: 'black'}} options={{
-          fixedHeight: '550px',
-          arrows: false,
-          autoplay: true,
-          interval: 10000,
-          drag: false,
-          pauseOnFocus: false,
-          speed: 800,
-          rewind: true
-        }}>
-          <SplideSlide>
-            <SliderBanner first/>
-            <SlideContent first>
-              <h1 className="slide-title">Select Sires do Brasil</h1>
-              <p className="slide-subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
-              <a href="#" className="slide-cta">Nossas soluções</a>
-            </SlideContent>
-          </SplideSlide>
-          <SplideSlide>
-            <SliderBanner second/>
-            <SlideContent second>
-              <img src="/icons/playbutton.svg" className="slide-play" width="70px" height="70px"/>
-              <h1 className="slide-title">Acompanhe o leilão de touros Aberdeen Angus</h1>
-              <span className="slide-badge">Ao vivo</span>
-            </SlideContent>
-          </SplideSlide>
-          <SplideSlide>
-          <SliderBanner first/>
-            <SlideContent first>
-              <h1 className="slide-title">Select Sires do Brasil</h1>
-              <p className="slide-subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
-              <a href="#" className="slide-cta">Nossas soluções</a>
-            </SlideContent>
-          </SplideSlide>
-        </Splide>
-      </Section>
-    </>
-  )
-}
