@@ -96,6 +96,13 @@ export const SlideContent = styled.div`
       width: fit-content;
       margin: 0 auto;
       margin-top: 40px;
+
+      transition: background-color 0.3s, border 0.3s;
+
+      &:hover {
+        background-color: #ed1c24;
+        border-color: #ed1c24;
+      }
     }
   `}
 
