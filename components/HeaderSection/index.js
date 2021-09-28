@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { Splide, SplideSlide } from 'splide-nextjs/react-splide'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Autoplay } from 'swiper'
 import Menu from '../../components/Menu'
 import Search from '../../components/Search'
 import { Section, NavbarContainer, Logo, SliderBanner, SlideContent } from './styles'
@@ -13,7 +13,19 @@ export default function HeaderSection() {
           <Logo className="logo" src="/logo.png" alt="Logo" width="250px" height="auto"/>
           <Menu />
         </NavbarContainer>
-        <Splide style={{background: 'black'}} options={{
+        <Swiper 
+          modules={[Pagination, Autoplay]}
+          slidesPerView={1}
+          autoplay={{
+            delay: 10000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+          }}
+          pagination={{ clickable: true }}
+          simulateTouch={false}
+          speed={800}
+        >
+        {/* <Splide style={{background: 'black'}} options={{
           fixedHeight: '550px',
           arrows: false,
           autoplay: true,
@@ -22,32 +34,32 @@ export default function HeaderSection() {
           pauseOnFocus: false,
           speed: 800,
           rewind: true
-        }}>
-          <SplideSlide>
+        }}> */}
+          <SwiperSlide>
             <SliderBanner first/>
             <SlideContent first>
               <h1 className="slide-title">Select Sires do Brasil</h1>
               <p className="slide-subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
               <a href="#" className="slide-cta">Nossas soluções</a>
             </SlideContent>
-          </SplideSlide>
-          <SplideSlide>
+          </SwiperSlide>
+          <SwiperSlide>
             <SliderBanner second/>
             <SlideContent second>
               <img src="/icons/playbutton.svg" className="slide-play" width="70px" height="70px"/>
               <h1 className="slide-title">Acompanhe o leilão de touros Aberdeen Angus</h1>
               <span className="slide-badge">Ao vivo</span>
             </SlideContent>
-          </SplideSlide>
-          <SplideSlide>
+          </SwiperSlide>
+          <SwiperSlide>
           <SliderBanner first/>
             <SlideContent first>
               <h1 className="slide-title">Select Sires do Brasil</h1>
               <p className="slide-subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
               <a href="#" className="slide-cta">Nossas soluções</a>
             </SlideContent>
-          </SplideSlide>
-        </Splide>
+          </SwiperSlide>
+        </Swiper>
       </Section>
     </>
   )

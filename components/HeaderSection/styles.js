@@ -4,6 +4,27 @@ export const Section = styled.section`
   position: relative;
   width: 100%;
   max-width: 100vw;
+
+  .swiper {
+    height: 550px;
+
+    @media(max-width: 576px) {
+      height: 600px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+      background: #fff;
+      opacity: 1;
+  } 
+
+  .swiper-pagination {
+    bottom: 40px!important;
+
+    @media(max-width: 576px) {
+      bottom: 30px!important;
+    }
+  }
 `
 
 export const NavbarContainer = styled.nav`
@@ -16,15 +37,25 @@ export const NavbarContainer = styled.nav`
   width: 100%;
   z-index: 9;
   padding: 60px;
+
+  @media(max-width: 768px) {
+    padding: 40px 10px;
+  }
 `;
 
 export const Logo = styled.img`
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
   user-select: none;
+
+  @media(max-width: 576px) {
+    top: 15px;
+    width: 200px;
+    height: 111px;
+  }
 `
 
 export const SliderBanner = styled.div`
@@ -37,10 +68,18 @@ export const SliderBanner = styled.div`
 
   ${props => props.first && css`
     background-image: url('/slider/banner-slider/01.png');
+
+    @media(max-width: 576px) {
+      background-image: url('/slider/banner-slider/mobile/01.png');
+    }
   `}
 
   ${props => props.second && css`
     background-image: url('/slider/banner-slider/02.png');
+
+    @media(max-width: 576px) {
+      background-image: url('/slider/banner-slider/mobile/02.png');
+    }
   `}
 `
 
@@ -65,6 +104,11 @@ export const SlideContent = styled.div`
       margin-top: 60px;
       text-align: center;
       margin-bottom: 0;
+
+      @media(max-width: 576px) {
+        font-size: 30px;
+        margin-top: 70px;
+      }
     }
 
     .slide-subtitle {
@@ -76,6 +120,10 @@ export const SlideContent = styled.div`
       max-width: 700px;
       margin: 0 auto;
       margin-top: 15px;
+
+      @media(max-width: 576px) {
+        padding: 0px 15px;
+      }
     }
 
     .slide-cta {
@@ -103,6 +151,11 @@ export const SlideContent = styled.div`
         background-color: #ed1c24;
         border-color: #ed1c24;
       }
+
+      @media(max-width: 576px) {
+        padding: 18px 40px;
+        margin-top: 35px;
+      }
     }
   `}
 
@@ -111,6 +164,11 @@ export const SlideContent = styled.div`
       margin-top: 80px;
       user-select: none;
       pointer-events: none;
+
+      @media(max-width: 576px) {
+        width: 60px;
+        height: 60px;
+      }
     }
     
     .slide-title {
@@ -121,6 +179,11 @@ export const SlideContent = styled.div`
       text-align: center;
       max-width: 500px;
       margin: 20px auto;
+
+      @media(max-width: 576px) {
+        font-size: 24px;
+        margin: 20px auto 25px;
+      }
     }
 
     .slide-badge {
@@ -134,6 +197,12 @@ export const SlideContent = styled.div`
       font-weight: 400;
       text-transform: uppercase;
       font-size: 16px;
+
+      @media(max-width: 576px) {
+        padding: 7px 12px;
+        font-weight: bold;
+        font-size: 14px;
+      }
     }
   `}
 `

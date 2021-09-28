@@ -13,6 +13,17 @@ export const Section = styled.section`
     margin: 0;
     margin-bottom: 25px;
   }
+
+  
+  @media(max-width: 768px) {
+    .col-md-6:first-child {
+      margin-bottom: 20px;
+    }
+
+    .col-md-6 {
+      padding: 0!important;
+    }
+  }
 `
 
 export const Select = styled.button`
@@ -41,5 +52,9 @@ export const Select = styled.button`
     top: 50%;
     right: 25px;
     transform: translateY(-50%);
+  }
+
+  @media(max-width: 768px) {
+    background-color: #eeeeee;
   }
 `

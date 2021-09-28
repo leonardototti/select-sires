@@ -36,4 +36,19 @@ export const MenuButton = styled.button`
       color: #ed1c24;
     }
   }
+
+  @media(max-width: 768px) {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+
+    img {
+      margin-right: 0;
+      margin-top: 3px;
+    }
+
+    span {
+      display: none;
+    }
+  }
 `
