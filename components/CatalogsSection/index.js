@@ -10,7 +10,6 @@ export default function CatalogsSection() {
           <Swiper 
             spaceBetween={20}
             slidesPerView={4}
-            simulateTouch={false}
           >
             <SwiperSlide>
               <img src="/slider/catalogs-slider/01.png" width="100%" />

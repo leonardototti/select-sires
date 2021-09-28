@@ -30,20 +30,6 @@ export const CatalogTitle = styled.h2`
   margin-bottom: 35px;
 `
 
-export const SlideContent = styled.div`
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-
-  &:hover {
-    .catalog-download {
-      left: 0px;
-      opacity: 1;
-      cursor: pointer;
-    }
-  }
-`
-
 export const CatalogDownload = styled.a`
   color: #fff;
   font-family: Inter;

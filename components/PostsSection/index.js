@@ -1,4 +1,4 @@
-import { Section, PostTitle, SliderButtonsContainer } from './styles'
+import { Section, PostTitle, PostLink, SliderButtonsContainer } from './styles'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper'
 import { Container } from 'react-bootstrap'
@@ -25,27 +25,51 @@ export default function PostsSection() {
           >
             <SwiperSlide>
               <img src="/slider/posts-slider/01.png" width="100%" />
+              <PostLink href="#" className="post-link">
+                Acessar publicação
+              </PostLink>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/posts-slider/02.png" width="100%" />
+              <PostLink href="#" className="post-link">
+                Acessar publicação
+              </PostLink>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/posts-slider/01.png" width="100%" />
+              <PostLink href="#" className="post-link">
+                Acessar publicação
+              </PostLink>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/posts-slider/02.png" width="100%" />
+              <PostLink href="#" className="post-link">
+                Acessar publicação
+              </PostLink>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/posts-slider/01.png" width="100%" />
+              <PostLink href="#" className="post-link">
+                Acessar publicação
+              </PostLink>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/posts-slider/02.png" width="100%" />
+              <PostLink href="#" className="post-link">
+                Acessar publicação
+              </PostLink>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/posts-slider/01.png" width="100%" />
+              <PostLink href="#" className="post-link">
+                Acessar publicação
+              </PostLink>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/posts-slider/02.png" width="100%" />
+              <PostLink href="#" className="post-link">
+                Acessar publicação
+              </PostLink>
             </SwiperSlide>
 
             <SliderButtonsContainer>
