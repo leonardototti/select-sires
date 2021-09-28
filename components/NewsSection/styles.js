@@ -35,6 +35,20 @@ export const SeeMore = styled.a`
   text-decoration: none;
 `
 
+export const ImageContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &:hover {
+    .news-link {
+      opacity: 1;
+      cursor: pointer;
+      pointer-events: all;
+    }
+  }
+`
+
 export const NewsTitle = styled.h3`
   color: #000;
   font-family: Inter;
@@ -45,4 +59,27 @@ export const NewsTitle = styled.h3`
   margin-top: 25px;
   user-select: none;
   pointer-events: none;
+`
+
+export const NewsLink = styled.a`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 4px);
+  background-color: rgba(0,0,0,0.5);
+
+  display: grid;
+  place-items: center;
+
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  opacity: 0;
 `

@@ -93,7 +93,7 @@ export const FooterPageLinks = styled.ul`
   flex-wrap: wrap;
   list-style: none;
   margin-top: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   padding-left: 0!important;
   row-gap: 10px;
 `
@@ -107,9 +107,10 @@ export const FooterPageLink = styled.li`
     color: #505050;
     text-decoration: none;
     transition: color 0.5s;
+    padding: 5px 15px;
 
     &:hover {
-      color: #737373;
+      color: #fff;
     }
   }
 `

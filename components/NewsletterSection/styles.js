@@ -85,11 +85,12 @@ export const NewsletterSubTitle = styled.h3`
 export const NewsletterJoin = styled.a`
   background-color: #fff;
   border-radius: 5px;
-  padding: 20px 90px;
+  padding: 18px 90px;
   display: block;
   cursor: pointer;
   user-select: none;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.2s, border-color 0.2s, color 0.3s;
+  border: 2px solid transparent;
 
   color: #ed1c24;
   font-family: Inter;
@@ -100,6 +101,12 @@ export const NewsletterJoin = styled.a`
 
   &:active {
     transform: scale(1.05);
+  }
+
+  &:hover {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
   }
 
   @media(max-width: 576px) {

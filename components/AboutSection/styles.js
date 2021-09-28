@@ -55,11 +55,12 @@ export const AboutDescription = styled.p`
 export const AboutButton = styled.a`
   background-color: #ed1c24;
   border-radius: 5px;
-  padding: 20px 90px;
+  padding: 18px 90px;
   display: block;
   cursor: pointer;
   user-select: none;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.2s, border-color 0.2s, color 0.3s;
+  border: 2px solid transparent;
 
   color: #fff;
   font-family: Inter;
@@ -70,5 +71,11 @@ export const AboutButton = styled.a`
 
   &:active {
     transform: scale(1.05);
+  }
+
+  &:hover {
+    background-color: transparent;
+    border-color: #ed1c24;
+    color: #ed1c24;
   }
 `
