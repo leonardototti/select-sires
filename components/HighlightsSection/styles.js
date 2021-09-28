@@ -1,8 +1,12 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Section = styled.section`
   width: 100%;
   padding: 60px 0px 35px;
+
+  @media(max-width: 576px) {
+    padding: 40px 0px;
+  }
 
   h2 {
     margin: 0!important;
@@ -10,12 +14,41 @@ export const Section = styled.section`
     font-weight: 300;
     color: #000;
     font-size: 30px;
+
+    @media(max-width: 576px) {
+      font-size: 24px;
+      text-align: center;
+    }
   }
 
   img {
     user-select: none;
     pointer-events: none;
     cursor: pointer;
+  }
+
+  .swiper-pagination {
+    text-align: left!important;
+    width: fit-content!important;
+    transition: 1s scale;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width: 576px) {
+      text-align: center!important;
+    }
+  }
+
+  .swiper-pagination {
+    left: 50px;
+    bottom: -90px;
+
+    @media(max-width: 576px) {
+      left: 50%!important;
+      bottom: 50px!important;
+      transform: translateX(-50%);
+    }
   }
 `
 
@@ -24,6 +57,11 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
+
+  @media(max-width: 576px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 `
 
 export const SeeMore = styled.a`
@@ -35,6 +73,21 @@ export const SeeMore = styled.a`
   font-size: 14px;
   letter-spacing: 1px;
   text-decoration: none;
+  margin-top: 4px;
+
+  @media(max-width: 576px) {
+    display: none;
+  }
+
+  ${props => props.responsive && css`
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+
+    @media(max-width: 576px) {
+      display: block;
+    }
+  `}
 `
 
 export const BullNameContainer = styled.div`
@@ -59,6 +112,11 @@ export const BullName = styled.h3`
   user-select: none;
   pointer-events: none;
   transition: background-color .3s, color .5s, padding .4s;
+
+  @media(max-width: 576px) {
+    text-align: center;
+    font-size: 14px;
+  }
 `
 
 export const SliderButtonsContainer = styled.div`
@@ -74,6 +132,10 @@ export const SliderButtonsContainer = styled.div`
     place-items: center;
     user-select: none;
     cursor: pointer;
+
+    @media(max-width: 576px) {
+      display: none;
+    }
     
     img {
       cursor: pointer;
