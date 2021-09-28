@@ -87,9 +87,7 @@ export default function HighlightsSection() {
               </div>
             </SliderButtonsContainer>
 
-            <div class="see-more-responsive">
-              <SeeMore responsive href="#">Ver todos os touros</SeeMore>
-            </div>
+            <SeeMore responsive href="#">Ver todos os touros</SeeMore>
           </Swiper>
         </Container>
       </Section>

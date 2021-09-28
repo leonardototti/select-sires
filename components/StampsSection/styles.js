@@ -17,6 +17,10 @@ export const SectionTitle = styled.h2`
   font-size: 30px;
   margin-top: 0!important;
   margin-bottom: 50px!important;
+
+  @media(max-width: 576px) {
+    text-align: center;
+  }
 `
 
 export const SlideContainer = styled.div`
@@ -60,6 +64,11 @@ export const StampName = styled.h3`
   user-select: none;
   pointer-events: none;
   text-align: center;
+
+  @media(max-width: 576px) {
+    font-size: 14px;
+    margin-top: 15px;
+  }
 `
 
 export const SliderButtonsContainer = styled.div`
@@ -73,5 +82,9 @@ export const SliderButtonsContainer = styled.div`
     justify-content: center;
     margin-top: 50px;
     user-select: none;
+
+    @media(max-width: 576px) {
+      margin-top: 25px;
+    }
   }
 `

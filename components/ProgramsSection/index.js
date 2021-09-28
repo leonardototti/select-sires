@@ -6,7 +6,7 @@ import { Section, HeaderContainer, SeeMore, ProgramNameContainer, ProgramName, P
 export default function ProgramsSection() {
   return (
     <>
-      <Section id="programs-section">
+      <Section>
         <Container>
           <HeaderContainer>
             <h2><strong>Nossos</strong> Programas</h2>
@@ -15,7 +15,7 @@ export default function ProgramsSection() {
           <Swiper 
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={24}
-            slidesPerView={3}
+            slidesPerView={1}
             autoplay={{
               delay: 6000,
               disableOnInteraction: false,
@@ -26,7 +26,14 @@ export default function ProgramsSection() {
               prevEl: '.slider-button-last'
             }}
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+              },
+              992: {
+                slidesPerView: 3
+              }
+            }}
           >
             <SwiperSlide>
               <ProgramContainer>
@@ -95,6 +102,8 @@ export default function ProgramsSection() {
                 <img src="/icons/slider-arrow-right.svg" width="29px" height="23px" />
               </div>
             </SliderButtonsContainer>
+
+            <SeeMore responsive href="#">Ver todos os touros</SeeMore>
           </Swiper>
         </Container>
       </Section>

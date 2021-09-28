@@ -19,7 +19,7 @@ export default function StampsSection({ onOpenStampModal, setStampId }) {
           <Swiper 
             modules={[Pagination, Autoplay]}
             spaceBetween={24}
-            slidesPerView={6}
+            slidesPerView={2}
             autoplay={{
               delay: 4000,
               disableOnInteraction: false,
@@ -29,7 +29,14 @@ export default function StampsSection({ onOpenStampModal, setStampId }) {
               clickable: true,
               el: '.slider-pagination'
             }}
-            simulateTouch={false}
+            breakpoints={{
+              768: {
+                slidesPerView: 4,
+              },
+              992: {
+                slidesPerView: 6
+              }
+            }}
           >
             {
               stamps.map((stamp) => {

@@ -50,4 +50,8 @@ export const StampDescription = styled.p`
   margin-top: 25px;
   user-select: none;
   pointer-events: none;
+
+  @media(max-width: 576px) {
+    font-size: 16px;
+  }
 `

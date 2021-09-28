@@ -9,29 +9,6 @@ body {
   box-sizing: border-box;
 }
 
-#header-section .splide__pagination {
-  bottom: 50px;
-}
-
-#header-section .splide__pagination__page {
-  background: #fff;
-  margin: 7px;
-}
-
-#programs-section .splide__pagination, #testimonies-section .splide__pagination, #posts-section .splide__pagination {
-  left: 50px;
-  bottom: -90px;
-}
-
-#programs-section .splide__pagination__page, #testimonies-section .splide__pagination__page, #posts-section .splide__pagination__page {
-  background: rgba(0,0,0,.2);
-}
-
-.splide__pagination__page.is-active {
-  background: #ed1c24!important;
-  opacity: 1!important;
-}
-
 .swiper-button-prev::after, .swiper-button-next::after {
   content: ""!important;
 }
@@ -79,6 +56,7 @@ body {
   justify-content: center;
 
   z-index: 9;
+  padding: 0 10px;
 }
 
 .react-modal-content {
@@ -90,6 +68,12 @@ body {
   position: relative;
   border-radius: 5px;
   outline: none;
+}
+
+@media(max-width: 576px) {
+  .react-modal-content {
+    padding: 50px 20px 55px;
+  }
 }
 
 .ReactModal__Content {
