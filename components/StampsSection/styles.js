@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Section = styled.section`
   width: 100%;
-  padding: 60px 0px 35px;
+  padding: 60px 0px 40px;
 
   img {
     user-select: none;
