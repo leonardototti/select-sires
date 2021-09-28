@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper'
 import { Container } from 'react-bootstrap'
-import { Section, HeaderContainer, SeeMore, BullName, SliderButtonsContainer } from './styles'
+import { Section, HeaderContainer, SeeMore, BullNameContainer, BullName, SliderButtonsContainer } from './styles'
 
 export default function HighlightsSection() {
   return (
@@ -26,34 +26,49 @@ export default function HighlightsSection() {
               prevEl: '.slider-button-last'
             }}
             pagination={{ clickable: true }}
+            simulateTouch={false}
           >
             <SwiperSlide>
               <img src="/slider/highlights-slider/01.png" width="100%" height="auto"/>
-              <BullName>GENGIS KHAN DE BRAS.</BullName>
+              <BullNameContainer>
+                <BullName>GENGIS KHAN DE BRAS.</BullName>
+              </BullNameContainer>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/highlights-slider/02.png" width="100%" height="auto"/>
-              <BullName>DUQUESA FIV</BullName>
+              <BullNameContainer>
+                <BullName>DUQUESA FIV</BullName>
+              </BullNameContainer>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/highlights-slider/03.png" width="100%" height="auto"/>
-              <BullName>GENGIS KHAN DE BRAS.</BullName>
+              <BullNameContainer>
+                <BullName>GENGIS KHAN DE BRAS.</BullName>
+              </BullNameContainer>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/highlights-slider/01.png" width="100%" height="auto"/>
-              <BullName>GENGIS KHAN DE BRAS.</BullName>
+              <BullNameContainer>
+                <BullName>GENGIS KHAN DE BRAS.</BullName>
+              </BullNameContainer>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/highlights-slider/02.png" width="100%" height="auto"/>
-              <BullName>DUQUESA FIV</BullName>
+              <BullNameContainer>
+                <BullName>DUQUESA FIV</BullName>
+              </BullNameContainer>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/highlights-slider/03.png" width="100%" height="auto"/>
-              <BullName>GENGIS KHAN DE BRAS.</BullName>
+              <BullNameContainer>
+                <BullName>GENGIS KHAN DE BRAS.</BullName>
+              </BullNameContainer>
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/highlights-slider/01.png" width="100%" height="auto"/>
-              <BullName>GENGIS KHAN DE BRAS.</BullName>
+              <BullNameContainer>
+                <BullName>GENGIS KHAN DE BRAS.</BullName>
+              </BullNameContainer>
             </SwiperSlide>
 
             <SliderButtonsContainer>

@@ -15,6 +15,7 @@ export const Section = styled.section`
   img {
     user-select: none;
     pointer-events: none;
+    cursor: pointer;
   }
 `
 
@@ -36,6 +37,14 @@ export const SeeMore = styled.a`
   text-decoration: none;
 `
 
+export const BullNameContainer = styled.div`
+  &:hover h3 {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+  }
+`
+
 export const BullName = styled.h3`
   color: #000;
   font-family: Inter;
@@ -43,10 +52,13 @@ export const BullName = styled.h3`
   font-size: 16px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 25px;
+  margin-top: -4px;
+  padding-top: 25px;
+  padding-bottom: 15px;
   letter-spacing: 1px;
   user-select: none;
   pointer-events: none;
+  transition: background-color .3s, color .5s, padding .4s;
 `
 
 export const SliderButtonsContainer = styled.div`
