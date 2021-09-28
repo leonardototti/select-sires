@@ -58,6 +58,28 @@ export const TestimonyContainer = styled.div`
     transform: translate(-50%, -50%);
     width: 84px;
     height: 84px;
+    pointer-events: all;
+    cursor: pointer;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .play-button-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 84px;
+    height: 84px;
+    pointer-events: all;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 9;
+    transition: opacity .4s;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 `
 

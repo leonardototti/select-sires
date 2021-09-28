@@ -30,6 +30,7 @@ export default function TestimoniesSection() {
             <TestimonyContainer>
               <img src="/slider/testimonies-slider/01.png" width="100%" />
               <img className="play-button" src="/icons/playbutton.svg" />
+              <img className="play-button-hover" src="/icons/playbutton-hover.png" />
             </TestimonyContainer>
             <AuthorName>WILSON SILVA</AuthorName>
           </SwiperSlide>
@@ -38,6 +39,7 @@ export default function TestimoniesSection() {
             <TestimonyContainer>
               <img src="/slider/testimonies-slider/02.png" width="100%" />
               <img className="play-button" src="/icons/playbutton.svg" />
+              <img className="play-button-hover" src="/icons/playbutton-hover.png" />
             </TestimonyContainer>
             <AuthorName>ADEMIR CORREIA</AuthorName>
           </SwiperSlide>
@@ -46,6 +48,7 @@ export default function TestimoniesSection() {
             <TestimonyContainer>
               <img src="/slider/testimonies-slider/01.png" width="100%" />
               <img className="play-button" src="/icons/playbutton.svg" />
+              <img className="play-button-hover" src="/icons/playbutton-hover.png" />
             </TestimonyContainer>
             <AuthorName>WILSON SILVA</AuthorName>
           </SwiperSlide>
@@ -54,6 +57,7 @@ export default function TestimoniesSection() {
             <TestimonyContainer>
               <img src="/slider/testimonies-slider/02.png" width="100%" />
               <img className="play-button" src="/icons/playbutton.svg" />
+              <img className="play-button-hover" src="/icons/playbutton-hover.png" />
             </TestimonyContainer>
             <AuthorName>ADEMIR CORREIA</AuthorName>
           </SwiperSlide>
@@ -62,6 +66,7 @@ export default function TestimoniesSection() {
             <TestimonyContainer>
               <img src="/slider/testimonies-slider/01.png" width="100%" />
               <img className="play-button" src="/icons/playbutton.svg" />
+              <img className="play-button-hover" src="/icons/playbutton-hover.png" />
             </TestimonyContainer>
             <AuthorName>WILSON SILVA</AuthorName>
           </SwiperSlide>
@@ -70,6 +75,7 @@ export default function TestimoniesSection() {
             <TestimonyContainer>
               <img src="/slider/testimonies-slider/02.png" width="100%" />
               <img className="play-button" src="/icons/playbutton.svg" />
+              <img className="play-button-hover" src="/icons/playbutton-hover.png" />
             </TestimonyContainer>
             <AuthorName>ADEMIR CORREIA</AuthorName>
           </SwiperSlide>
