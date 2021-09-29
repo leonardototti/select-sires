@@ -6,20 +6,23 @@ import SearchSection from '../components/SearchSection'
 import StampsSection from '../components/StampsSection'
 import StampModal from '../components/StampModal'
 import CatalogsSection from '../components/CatalogsSection'
-
-import { useState } from 'react'
-import Modal from 'react-modal'
 import TestimoniesSection from '../components/TestimoniesSection'
 import PostsSection from '../components/PostsSection'
 import AboutSection from '../components/AboutSection'
 import RepresentativesSection from '../components/RepresentativesSection'
 import NewsSection from '../components/NewsSection'
 import NewsletterSection from '../components/NewsletterSection'
+import NewsletterModal from '../components/NewsletterModal'
 import Footer from '../components/Footer'
+
+import { useState } from 'react'
+import Modal from 'react-modal'
 
 Modal.setAppElement('#__next');
 
 export default function Home() {
+
+  // Modal de selos
 
   const [isStampModalOpen, setIsStampModalOpen] = useState(false);
   const [stampId, setStampId] = useState(1);
@@ -30,6 +33,18 @@ export default function Home() {
 
   function handleCloseStampModal() {
     setIsStampModalOpen(false);
+  }
+
+  // Modal da newsletter
+
+  const [isNewsletterModalOpen, setIsNewsletterModalOpen] = useState(false);
+
+  function handleOpenNewsletterModal() {
+    setIsNewsletterModalOpen(true);
+  }
+
+  function handleCloseNewsletterModal() {
+    setIsNewsletterModalOpen(false);
   }
 
   return (
@@ -57,7 +72,13 @@ export default function Home() {
       <AboutSection />
       <RepresentativesSection />
       <NewsSection />
-      <NewsletterSection />
+      <NewsletterSection
+        onOpenNewsletterModal={handleOpenNewsletterModal}
+      />
+      <NewsletterModal
+        isOpen={isNewsletterModalOpen}
+        onRequestClose={handleCloseNewsletterModal}
+      />
       <Footer />
     </>
   )

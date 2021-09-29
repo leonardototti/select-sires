@@ -9,12 +9,13 @@ body {
   box-sizing: border-box;
 }
 
-.swiper-button-prev::after, .swiper-button-next::after {
-  content: ""!important;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "" !important;
 }
 
 .swiper-button-disabled {
-  opacity: .2;
+  opacity: 0.2;
   cursor: auto;
   pointer-events: none;
 }
@@ -24,25 +25,26 @@ body {
 }
 
 .swiper-pagination-bullet {
-  margin: 7px!important;
+  margin: 7px !important;
   transition: 1s scale;
 }
 
 .swiper-pagination-bullet-active {
-  background: #ed1c24!important;
-  transform: scale(1.4)!important;
+  background: #ed1c24 !important;
+  transform: scale(1.4) !important;
 }
 
-#programs-section .swiper-pagination, #testimonies-section .swiper-pagination {
-  text-align: left!important;
-  width: fit-content!important;
+#programs-section .swiper-pagination,
+#testimonies-section .swiper-pagination {
+  text-align: left !important;
+  width: fit-content !important;
   transition: 1s scale;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.react-modal-overlay {
+.stamp-modal-overlay {
   background: rgba(0, 0, 0, 0.5);
 
   position: fixed;
@@ -59,7 +61,7 @@ body {
   padding: 0 10px;
 }
 
-.react-modal-content {
+.stamp-modal-content {
   width: 100%;
   max-width: 780px;
 
@@ -70,8 +72,42 @@ body {
   outline: none;
 }
 
-@media(max-width: 576px) {
-  .react-modal-content {
+@media (max-width: 576px) {
+  .stamp-modal-content {
+    padding: 50px 20px 55px;
+  }
+}
+
+.newsletter-modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9;
+  padding: 0 10px;
+}
+
+.newsletter-modal-content {
+  width: 100%;
+  max-width: 580px;
+
+  background: #fff;
+  padding: 25px 100px 55px;
+  position: relative;
+  border-radius: 5px;
+  outline: none;
+}
+
+@media (max-width: 576px) {
+  .newsletter-modal-content {
     padding: 50px 20px 55px;
   }
 }
@@ -90,4 +126,8 @@ body {
 .ReactModal__Content--before-close {
   opacity: 0;
   transform: translateY(-50px);
+}
+
+.ReactModal__Body--open {
+  overflow-y: hidden;
 }

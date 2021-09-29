@@ -1,21 +1,21 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components";
 
 export const Section = styled.section`
   width: 100%;
-  padding: 60px 0px 120px;
+  padding: 60px 0px 40px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     padding: 40px 0px;
   }
 
   h2 {
-    margin: 0!important;
+    margin: 0 !important;
     font-family: Inter;
     font-weight: 300;
     color: #000;
     font-size: 30px;
 
-    @media(max-width: 576px) {
+    @media (max-width: 576px) {
       font-size: 24px;
     }
   }
@@ -34,7 +34,7 @@ export const Section = styled.section`
       opacity: 1;
     }
   }
-`
+`;
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -42,11 +42,11 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   margin-bottom: 40px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     justify-content: center;
     margin-bottom: 30px;
   }
-`
+`;
 
 export const SeeMore = styled.a`
   color: #ed1c24;
@@ -59,20 +59,22 @@ export const SeeMore = styled.a`
   text-decoration: none;
   margin-top: 4px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     display: none;
   }
 
-  ${props => props.responsive && css`
-    display: none;
-    text-align: center;
-    margin-top: 20px;
+  ${(props) =>
+    props.responsive &&
+    css`
+      display: none;
+      text-align: center;
+      margin-top: 20px;
 
-    @media(max-width: 576px) {
-      display: block;
-    }
-  `}
-`
+      @media (max-width: 576px) {
+        display: block;
+      }
+    `}
+`;
 
 export const ImageContainer = styled.div`
   width: 100%;
@@ -86,7 +88,7 @@ export const ImageContainer = styled.div`
       pointer-events: all;
     }
   }
-`
+`;
 
 export const NewsTitle = styled.h3`
   color: #000;
@@ -99,11 +101,11 @@ export const NewsTitle = styled.h3`
   user-select: none;
   pointer-events: none;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     margin-top: 15px;
     font-size: 17px;
   }
-`
+`;
 
 export const NewsLink = styled.a`
   position: absolute;
@@ -111,7 +113,7 @@ export const NewsLink = styled.a`
   left: 0;
   width: 100%;
   height: calc(100% - 4px);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 
   display: grid;
   place-items: center;
@@ -126,7 +128,7 @@ export const NewsLink = styled.a`
   text-decoration: none;
 
   opacity: 0;
-`
+`;
 
 export const SliderButtonsContainer = styled.div`
   display: flex;
@@ -135,4 +137,4 @@ export const SliderButtonsContainer = styled.div`
   margin-top: 40px;
   margin-bottom: 30px;
   text-align: center;
-`
+`;

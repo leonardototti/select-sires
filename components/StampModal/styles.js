@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.main`
   display: flex;
@@ -13,18 +13,18 @@ export const Container = styled.main`
     padding: 25px;
     cursor: pointer;
   }
-`
+`;
 export const PolygonPlaceholder = styled.div`
   width: 113px;
   height: 105px;
-  background-image: url('/slider/stamps-slider/polygon-modal.png');
+  background-image: url("/slider/stamps-slider/polygon-modal.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  transition: background-image .2s;
+  transition: background-image 0.2s;
   display: grid;
   place-items: center;
-`
+`;
 
 export const StampName = styled.h4`
   color: #000;
@@ -38,7 +38,7 @@ export const StampName = styled.h4`
   user-select: none;
   pointer-events: none;
   text-align: center;
-`
+`;
 
 export const StampDescription = styled.p`
   color: #686868;
@@ -51,7 +51,7 @@ export const StampDescription = styled.p`
   user-select: none;
   pointer-events: none;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     font-size: 16px;
   }
-`
+`;
