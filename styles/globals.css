@@ -33,7 +33,7 @@ body {
   transform: scale(1.4)!important;
 }
 
-#programs-section .swiper-pagination, #testimonies-section .swiper-pagination, #posts-section .swiper-pagination {
+#programs-section .swiper-pagination, #testimonies-section .swiper-pagination {
   text-align: left!important;
   width: fit-content!important;
   transition: 1s scale;

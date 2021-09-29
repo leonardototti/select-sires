@@ -12,6 +12,10 @@ export const Section = styled.section`
   align-items: center;
   justify-content: center;
 
+  @media(max-width: 576px) {
+    padding: 60px 20px 70px;
+  }
+
   .button-container {
     display: flex;
     align-items: center;
@@ -28,6 +32,10 @@ export const AboutTitle = styled.h2`
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 50px;
+
+  @media(max-width: 576px) {
+    margin-bottom: 25px;
+  }
 `
 
 export const AboutSubtitle = styled.h3`
@@ -39,6 +47,11 @@ export const AboutSubtitle = styled.h3`
   text-align: center;
   max-width: 950px;
   margin: 0 auto 50px;
+
+  @media(max-width: 576px) {
+    font-size: 17px;
+    margin: 0 auto 25px;
+  }
 `
 
 export const AboutDescription = styled.p`
@@ -50,6 +63,10 @@ export const AboutDescription = styled.p`
   text-align: center;
   max-width: 780px;
   margin: 0 auto 50px;
+
+  @media(max-width: 576px) {
+    display: none;
+  }
 `
 
 export const AboutButton = styled.a`

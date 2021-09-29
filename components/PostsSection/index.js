@@ -5,23 +5,34 @@ import { Container } from 'react-bootstrap'
 
 export default function PostsSection() {
   return (
-    <Section id="posts-section">
+    <Section>
       <Container>
-        <PostTitle>Postagens</PostTitle>
+        <PostTitle>Publicações</PostTitle>
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={20}
-            slidesPerView={4}
+            slidesPerView={1.4}
             autoplay={{
               delay: 10000,
               disableOnInteraction: false,
               pauseOnMouseEnter: true
             }}
+            centeredSlides={true}
             navigation={{ 
               nextEl: '.slider-button-next',
               prevEl: '.slider-button-last'
             }}
             pagination={{ clickable: true }}
+            breakpoints={{
+              576: {
+                slidesPerView: 2,
+                centeredSlides: false
+              },
+              992: {
+                slidesPerView: 4,
+                centeredSlides: false
+              }
+            }}
           >
             <SwiperSlide>
               <img src="/slider/posts-slider/01.png" width="100%" />
