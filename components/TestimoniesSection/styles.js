@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Section = styled.section`
   width: 100%;
@@ -11,6 +11,24 @@ export const Section = styled.section`
     font-weight: 300;
     color: #000;
     font-size: 30px;
+
+    @media(max-width: 576px) {
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+
+  .swiper-pagination {
+    left: 50px;
+    bottom: -90px;
+    text-align: left;
+
+    @media(max-width: 576px) {
+      left: 50%!important;
+      bottom: 50px!important;
+      transform: translateX(-50%);
+      text-align: center;
+    }
   }
 `
 
@@ -19,6 +37,11 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
+  
+  @media(max-width: 576px) {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
 `
 
 export const SeeMore = styled.a`
@@ -30,6 +53,21 @@ export const SeeMore = styled.a`
   font-size: 14px;
   letter-spacing: 1px;
   text-decoration: none;
+  margin-top: 4px;
+
+  @media(max-width: 576px) {
+    display: none;
+  }
+
+  ${props => props.responsive && css`
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+
+    @media(max-width: 576px) {
+      display: block;
+    }
+  `}
 `
 
 export const AuthorName = styled.h3`
@@ -43,6 +81,11 @@ export const AuthorName = styled.h3`
   letter-spacing: 1px;
   user-select: none;
   pointer-events: none;
+
+  @media(max-width: 576px) {
+    text-align: center;
+    margin-top: 15px;
+  }
 `
 
 export const TestimonyContainer = styled.div`
@@ -97,6 +140,10 @@ export const SliderButtonsContainer = styled.div`
     user-select: none;
     cursor: pointer;
 
+    @media(max-width: 576px) {
+      display: none;
+    }
+    
     img {
       cursor: pointer;
     }

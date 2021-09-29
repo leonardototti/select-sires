@@ -13,8 +13,8 @@ export default function TestimoniesSection() {
         </HeaderContainer>
         <Swiper 
           modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={2}
+          spaceBetween={24}
+          slidesPerView={1}
           autoplay={{
             delay: 10000,
             disableOnInteraction: false,
@@ -25,6 +25,11 @@ export default function TestimoniesSection() {
             prevEl: '.slider-button-last'
           }}
           pagination={{ clickable: true }}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+            }
+          }}
         >
           <SwiperSlide>
             <TestimonyContainer>
@@ -88,6 +93,8 @@ export default function TestimoniesSection() {
               <img src="/icons/slider-arrow-right.svg" width="29px" height="23px" />
             </div>
           </SliderButtonsContainer>
+
+          <SeeMore responsive href="#">Ver todos os touros</SeeMore>
         </Swiper>
       </Container>
     </Section>
