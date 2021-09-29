@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Autoplay } from 'swiper'
 import { Container } from 'react-bootstrap'
-import { Section, HeaderContainer, SeeMore, ImageContainer, NewsTitle, NewsLink } from './styles'
+import { Section, HeaderContainer, SeeMore, ImageContainer, NewsTitle, NewsLink, SliderButtonsContainer } from './styles'
 
 export default function NewsSection() {
   return (
@@ -10,9 +11,19 @@ export default function NewsSection() {
           <h2><strong>Notícias</strong> Select Sires</h2>
           <SeeMore href="#">Ver todos as notícias</SeeMore>
         </HeaderContainer>
-        <Swiper 
+        <Swiper
+          modules={[Pagination, Autoplay]}
           spaceBetween={20}
-          slidesPerView={3}
+          slidesPerView={1}
+          pagination={{ clickable: true, el: '.slider-pagination' }}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+            },
+            992: {
+              slidesPerView: 3
+            }
+          }}
         >
           <SwiperSlide>
             <ImageContainer>
@@ -37,6 +48,14 @@ export default function NewsSection() {
             </ImageContainer>
             <NewsTitle>Genética Select Sires se destaca pela qualidade de produção e longevidade</NewsTitle>
           </SwiperSlide>
+
+          <SliderButtonsContainer>
+            <div className="slider-pagination">
+
+            </div>
+          </SliderButtonsContainer>
+
+          <SeeMore responsive href="#">Ver todos as notícias</SeeMore>
         </Swiper>
       </Container>
     </Section>

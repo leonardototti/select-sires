@@ -103,7 +103,7 @@ export default function ProgramsSection() {
               </div>
             </SliderButtonsContainer>
 
-            <SeeMore responsive href="#">Ver todos os touros</SeeMore>
+            <SeeMore responsive href="#">Ver todos os programas</SeeMore>
           </Swiper>
         </Container>
       </Section>

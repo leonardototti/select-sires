@@ -8,6 +8,10 @@ export const Section = styled.section`
   padding: 50px 20px 15px;
   background-color: #000;
 
+  @media(max-width: 576px) {
+    padding: 30px 20px 15px;
+  }
+
   .toggle-map-container {
     display: flex;
     align-items: center;
@@ -21,6 +25,10 @@ export const SectionTitle = styled.h2`
   font-weight: bold;
   font-size: 30px;
   text-align: center;
+
+  @media(max-width: 576px) {
+    font-size: 24px;
+  }
 `
 
 export const SelectStateContainer = styled.div`
@@ -44,6 +52,10 @@ export const SelectState = styled.button`
   padding: 0 15px;
   cursor: pointer;
   user-select: none;
+
+  @media(max-width: 576px) {
+    font-size: 16px;
+  }
 
   img {
     position: absolute;

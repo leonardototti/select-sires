@@ -1,8 +1,12 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Section = styled.section`
   width: 100%;
   padding: 60px 0px 120px;
+
+  @media(max-width: 576px) {
+    padding: 40px 0px;
+  }
 
   h2 {
     margin: 0!important;
@@ -10,10 +14,25 @@ export const Section = styled.section`
     font-weight: 300;
     color: #000;
     font-size: 30px;
+
+    @media(max-width: 576px) {
+      font-size: 24px;
+    }
   }
 
   img {
     user-select: none;
+  }
+
+  .swiper-pagination {
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+
+    .swiper-pagination-bullet {
+      background: #cccccc;
+      opacity: 1;
+    }
   }
 `
 
@@ -22,6 +41,11 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
+
+  @media(max-width: 576px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 `
 
 export const SeeMore = styled.a`
@@ -33,6 +57,21 @@ export const SeeMore = styled.a`
   font-size: 14px;
   letter-spacing: 1px;
   text-decoration: none;
+  margin-top: 4px;
+
+  @media(max-width: 576px) {
+    display: none;
+  }
+
+  ${props => props.responsive && css`
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+
+    @media(max-width: 576px) {
+      display: block;
+    }
+  `}
 `
 
 export const ImageContainer = styled.div`
@@ -59,6 +98,11 @@ export const NewsTitle = styled.h3`
   margin-top: 25px;
   user-select: none;
   pointer-events: none;
+
+  @media(max-width: 576px) {
+    margin-top: 15px;
+    font-size: 17px;
+  }
 `
 
 export const NewsLink = styled.a`
@@ -82,4 +126,13 @@ export const NewsLink = styled.a`
   text-decoration: none;
 
   opacity: 0;
+`
+
+export const SliderButtonsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
 `
