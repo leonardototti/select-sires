@@ -23,26 +23,15 @@ export const Section = styled.section`
   }
 
   .swiper-pagination {
-    text-align: left!important;
-    width: fit-content!important;
-    transition: 1s scale;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @media(max-width: 576px) {
-      text-align: center!important;
-    }
-  }
-
-  .swiper-pagination {
     left: 50px;
     bottom: -90px;
+    text-align: left;
 
     @media(max-width: 576px) {
       left: 50%!important;
       bottom: 50px!important;
       transform: translateX(-50%);
+      text-align: center;
     }
   }
 `
