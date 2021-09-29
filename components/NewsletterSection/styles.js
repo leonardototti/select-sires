@@ -79,6 +79,7 @@ export const NewsletterSubTitle = styled.h3`
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
+    margin-bottom: 30px;
   }
 `
 

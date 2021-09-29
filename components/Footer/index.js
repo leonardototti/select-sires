@@ -64,7 +64,7 @@ export default function Footer() {
         <img src="/icons/language-arrow.png" width="8px" height="6px" />
       </LanguageSelector>
       <BackToTop href="#">
-    	  <img src="/icons/backtotop-arrow.svg" width="23px" height="29px" />
+        <img src="/icons/backtotop-arrow.svg" width="23px" height="29px" />
       </BackToTop>
     </Section>
   )

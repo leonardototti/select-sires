@@ -6,6 +6,14 @@ export const Section = styled.footer`
   text-align: center;
   position: relative;
 
+  @media(max-width: 576px) {
+    padding: 50px 10px;
+
+    hr {
+      display: none;
+    }
+  }
+
   .button-container {
     display: flex;
     align-items: center;
@@ -24,6 +32,10 @@ export const FooterTitle = styled.h2`
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 10px;
+
+  @media(max-width: 576px) {
+    font-size: 24px;
+  }
 `
 
 export const FooterAddress = styled.h3`
@@ -32,6 +44,13 @@ export const FooterAddress = styled.h3`
   font-weight: 300;
   font-size: 18px;
   margin-bottom: 25px;
+
+  @media(max-width: 576px) {
+    font-size: 16px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `
 
 export const FooterAddressButton = styled.a`
@@ -53,6 +72,10 @@ export const FooterAddressButton = styled.a`
 
   border: 2px solid transparent;
   transition: border .5s;
+
+  @media(max-width: 576px) {
+    margin-bottom: 50px;
+  }
 
   &:hover {
     border-color: #98989866;
@@ -84,6 +107,10 @@ export const FooterPhone = styled.a`
   display: block;
   cursor: pointer;
   text-decoration: none;
+
+  @media(max-width: 576px) {
+    margin-bottom: 40px;
+  }
 `
 
 export const FooterPageLinks = styled.ul`
@@ -96,6 +123,10 @@ export const FooterPageLinks = styled.ul`
   margin-bottom: 55px;
   padding-left: 0!important;
   row-gap: 10px;
+
+  @media(max-width: 576px) {
+    display: none;
+  }
 `
 
 export const FooterPageLink = styled.li`
@@ -134,6 +165,10 @@ export const FooterCopyright = styled.div`
   justify-content: center;
   user-select: none;
 
+  @media(max-width: 576px) {
+    margin-top: 180px;
+  }
+
   a {
     padding: 10px 20px;
 
@@ -164,8 +199,23 @@ export const LanguageSelector = styled.button`
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   min-width: 170px;
+
+  @media(max-width: 576px) {
+    justify-content: center;
+    min-width: 70%;
+    left: 50%;
+    bottom: 170px;
+    transform: translateX(-50%);
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+  }
 `
 
 export const BackToTop = styled.a`
@@ -191,5 +241,20 @@ export const BackToTop = styled.a`
 
   img {
     filter: invert(1);
+  }
+
+  @media(max-width: 576px) {
+    bottom: 50px;
+    right: 10px;
+    
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+
+    img {
+      width: 17px;
+      height: 22px;
+    }
   }
 `
