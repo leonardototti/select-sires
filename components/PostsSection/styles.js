@@ -1,15 +1,14 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Section = styled.section`
   background-color: #000;
   padding: 50px 20px;
 
-  
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     padding: 30px 0px 40px;
 
     .container {
-      padding: 0!important;
+      padding: 0 !important;
     }
   }
 
@@ -29,14 +28,16 @@ export const Section = styled.section`
       }
     }
   }
-  
+
   .swiper-pagination {
     left: 0px;
     bottom: 0px;
     text-align: left;
+    width: fit-content !important;
 
-    @media(max-width: 576px) {
+    @media (max-width: 576px) {
       text-align: center;
+      width: 100% !important;
     }
 
     .swiper-pagination-bullet {
@@ -44,7 +45,7 @@ export const Section = styled.section`
       opacity: 1;
     }
   }
-`
+`;
 
 export const PostTitle = styled.h2`
   color: #fff;
@@ -53,11 +54,11 @@ export const PostTitle = styled.h2`
   font-size: 30px;
   margin-bottom: 35px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     font-size: 24px;
     text-align: center;
   }
-`
+`;
 
 export const PostLink = styled.a`
   color: #fff;
@@ -83,8 +84,8 @@ export const PostLink = styled.a`
   background-color: #ed1c24;
   padding: 50px 15px 47px;
 
-  transition: opacity .5s;
-`
+  transition: opacity 0.5s;
+`;
 
 export const SliderButtonsContainer = styled.div`
   display: flex;
@@ -92,7 +93,7 @@ export const SliderButtonsContainer = styled.div`
   justify-content: flex-end;
   margin-top: 60px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     margin-top: 80px;
   }
 
@@ -104,7 +105,7 @@ export const SliderButtonsContainer = styled.div`
     user-select: none;
     cursor: pointer;
 
-    @media(max-width: 576px) {
+    @media (max-width: 576px) {
       display: none;
     }
 
@@ -113,4 +114,4 @@ export const SliderButtonsContainer = styled.div`
       filter: invert(1);
     }
   }
-`
+`;

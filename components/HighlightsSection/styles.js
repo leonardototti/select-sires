@@ -1,21 +1,21 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components";
 
 export const Section = styled.section`
   width: 100%;
   padding: 60px 0px 35px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     padding: 40px 0px;
   }
 
   h2 {
-    margin: 0!important;
+    margin: 0 !important;
     font-family: Inter;
     font-weight: 300;
     color: #000;
     font-size: 30px;
 
-    @media(max-width: 576px) {
+    @media (max-width: 576px) {
       font-size: 24px;
       text-align: center;
     }
@@ -31,15 +31,16 @@ export const Section = styled.section`
     left: 50px;
     bottom: -90px;
     text-align: left;
+    width: fit-content;
 
-    @media(max-width: 576px) {
-      left: 50%!important;
-      bottom: 50px!important;
+    @media (max-width: 576px) {
+      left: 50% !important;
+      bottom: 50px !important;
       transform: translateX(-50%);
       text-align: center;
     }
   }
-`
+`;
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -47,11 +48,11 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   margin-bottom: 40px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     justify-content: center;
     margin-bottom: 30px;
   }
-`
+`;
 
 export const SeeMore = styled.a`
   color: #ed1c24;
@@ -64,20 +65,22 @@ export const SeeMore = styled.a`
   text-decoration: none;
   margin-top: 4px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     display: none;
   }
 
-  ${props => props.responsive && css`
-    display: none;
-    text-align: center;
-    margin-top: 20px;
+  ${(props) =>
+    props.responsive &&
+    css`
+      display: none;
+      text-align: center;
+      margin-top: 20px;
 
-    @media(max-width: 576px) {
-      display: block;
-    }
-  `}
-`
+      @media (max-width: 576px) {
+        display: block;
+      }
+    `}
+`;
 
 export const BullNameContainer = styled.div`
   &:hover h3 {
@@ -85,7 +88,7 @@ export const BullNameContainer = styled.div`
     color: #fff;
     padding: 20px;
   }
-`
+`;
 
 export const BullName = styled.h3`
   color: #000;
@@ -100,13 +103,13 @@ export const BullName = styled.h3`
   letter-spacing: 1px;
   user-select: none;
   pointer-events: none;
-  transition: background-color .3s, color .5s, padding .4s;
+  transition: background-color 0.3s, color 0.5s, padding 0.4s;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     text-align: center;
     font-size: 14px;
   }
-`
+`;
 
 export const SliderButtonsContainer = styled.div`
   display: flex;
@@ -122,12 +125,12 @@ export const SliderButtonsContainer = styled.div`
     user-select: none;
     cursor: pointer;
 
-    @media(max-width: 576px) {
+    @media (max-width: 576px) {
       display: none;
     }
-    
+
     img {
       cursor: pointer;
     }
   }
-`
+`;
