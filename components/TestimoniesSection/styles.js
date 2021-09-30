@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components";
 
 export const Section = styled.section`
   width: 100%;
@@ -6,13 +6,13 @@ export const Section = styled.section`
   background-color: #f8f8f8;
 
   h2 {
-    margin: 0!important;
+    margin: 0 !important;
     font-family: Inter;
     font-weight: 300;
     color: #000;
     font-size: 30px;
 
-    @media(max-width: 576px) {
+    @media (max-width: 576px) {
       font-weight: bold;
       font-size: 24px;
     }
@@ -23,26 +23,26 @@ export const Section = styled.section`
     bottom: -90px;
     text-align: left;
 
-    @media(max-width: 576px) {
-      left: 50%!important;
-      bottom: 50px!important;
+    @media (max-width: 576px) {
+      left: 50% !important;
+      bottom: 50px !important;
       transform: translateX(-50%);
       text-align: center;
     }
   }
-`
+`;
 
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
-  
-  @media(max-width: 576px) {
+
+  @media (max-width: 576px) {
     justify-content: center;
     margin-bottom: 25px;
   }
-`
+`;
 
 export const SeeMore = styled.a`
   color: #ed1c24;
@@ -55,20 +55,22 @@ export const SeeMore = styled.a`
   text-decoration: none;
   margin-top: 4px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     display: none;
   }
 
-  ${props => props.responsive && css`
-    display: none;
-    text-align: center;
-    margin-top: 20px;
+  ${(props) =>
+    props.responsive &&
+    css`
+      display: none;
+      text-align: center;
+      margin-top: 20px;
 
-    @media(max-width: 576px) {
-      display: block;
-    }
-  `}
-`
+      @media (max-width: 576px) {
+        display: block;
+      }
+    `}
+`;
 
 export const AuthorName = styled.h3`
   color: #000;
@@ -82,11 +84,11 @@ export const AuthorName = styled.h3`
   user-select: none;
   pointer-events: none;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     text-align: center;
     margin-top: 15px;
   }
-`
+`;
 
 export const TestimonyContainer = styled.div`
   margin-bottom: 20px;
@@ -105,6 +107,11 @@ export const TestimonyContainer = styled.div`
     cursor: pointer;
     z-index: 1;
     pointer-events: none;
+
+    @media (max-width: 400px) {
+      width: 64px;
+      height: 64px;
+    }
   }
 
   .play-button-hover {
@@ -118,13 +125,18 @@ export const TestimonyContainer = styled.div`
     cursor: pointer;
     opacity: 0;
     z-index: 9;
-    transition: opacity .4s;
+    transition: opacity 0.4s;
+
+    @media (max-width: 400px) {
+      width: 64px;
+      height: 64px;
+    }
 
     &:hover {
       opacity: 1;
     }
   }
-`
+`;
 
 export const SliderButtonsContainer = styled.div`
   display: flex;
@@ -140,12 +152,12 @@ export const SliderButtonsContainer = styled.div`
     user-select: none;
     cursor: pointer;
 
-    @media(max-width: 576px) {
+    @media (max-width: 576px) {
       display: none;
     }
-    
+
     img {
       cursor: pointer;
     }
   }
-`
+`;
