@@ -1,14 +1,38 @@
-import { Section, FooterTitle, FooterAddress, FooterAddressButton, FooterPhoneTitle, FooterPhone, FooterPageLinks, FooterPageLink, FooterSocialLinks, FooterSocialLink, FooterCopyright, LanguageSelector, BackToTop } from './styles'
-import { Container } from 'react-bootstrap'
+import {
+  Section,
+  FooterTitle,
+  FooterAddress,
+  FooterAddressButton,
+  FooterPhoneTitle,
+  FooterPhone,
+  FooterPageLinks,
+  FooterPageLink,
+  FooterSocialLinks,
+  FooterSocialLink,
+  FooterCopyright,
+  LanguageSelector,
+  BackToTop,
+} from "./styles";
+import { Container } from "react-bootstrap";
 
 export default function Footer() {
   return (
     <Section>
       <Container>
         <FooterTitle>Select Sires do Brasil</FooterTitle>
-        <FooterAddress>Rua São Nicolau 230, pavilhão 6B, Bairro Santa Maria Goretti - Porto Alegre, RS</FooterAddress>
+        <FooterAddress>
+          Rua São Nicolau 230, pavilhão 6B, Bairro Santa Maria Goretti - Porto
+          Alegre, RS
+        </FooterAddress>
         <div className="button-container">
-          <FooterAddressButton href="https://goo.gl/maps/ZniwkMxTkJ7ciGET8" target="_blank" rel="noopener noreferrer">Mostrar no mapa<img src="/icons/address-arrow.png" /></FooterAddressButton>
+          <FooterAddressButton
+            href="https://goo.gl/maps/ZniwkMxTkJ7ciGET8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mostrar no mapa
+            <img src="/icons/address-arrow.png" />
+          </FooterAddressButton>
         </div>
 
         <FooterPhoneTitle>Nosso telefone</FooterPhoneTitle>
@@ -20,41 +44,49 @@ export default function Footer() {
 
         <FooterPageLinks>
           <FooterPageLink>
-            <a href="#">
-              Política de privacidade
-            </a>
+            <a href="#">Política de privacidade</a>
           </FooterPageLink>
           <FooterPageLink>
-            <a href="#">
-              Formulário de acasalamento e genética
-            </a>
+            <a href="#">Formulário de acasalamento e genética</a>
           </FooterPageLink>
           <FooterPageLink>
-            <a href="#">
-              Encontre um representante
-            </a>
+            <a href="#">Encontre um representante</a>
           </FooterPageLink>
           <FooterPageLink>
-            <a href="#">
-              Trabalhe conosco
-            </a>
+            <a href="#">Trabalhe conosco</a>
           </FooterPageLink>
         </FooterPageLinks>
 
         <FooterSocialLinks>
-          <FooterSocialLink href="" target="_blank" rel="noopener noreferrer">
+          <FooterSocialLink
+            href="https://www.facebook.com/selectsiresbrasil"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="/icons/footer/facebook.png" />
           </FooterSocialLink>
-          <FooterSocialLink href="" target="_blank" rel="noopener noreferrer">
+          <FooterSocialLink
+            href="https://www.instagram.com/selectsiresdobrasil/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="/icons/footer/instagram.png" />
           </FooterSocialLink>
-          <FooterSocialLink href="" target="_blank" rel="noopener noreferrer">
+          <FooterSocialLink
+            href="https://www.youtube.com/selectsiresbrasil"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="/icons/footer/youtube.png" />
           </FooterSocialLink>
         </FooterSocialLinks>
 
         <FooterCopyright>
-          <a href="https://clickweb.com.br" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://clickweb.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="/clickweb-logo.png" />
           </a>
         </FooterCopyright>
@@ -67,5 +99,5 @@ export default function Footer() {
         <img src="/icons/backtotop-arrow.svg" width="23px" height="29px" />
       </BackToTop>
     </Section>
-  )
+  );
 }
