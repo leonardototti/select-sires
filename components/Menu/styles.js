@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const MenuButton = styled.button`
   background: #fff;
@@ -11,6 +11,7 @@ export const MenuButton = styled.button`
   justify-content: center;
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
   user-select: none;
+  cursor: pointer;
 
   img {
     margin-right: 15px;
@@ -37,7 +38,7 @@ export const MenuButton = styled.button`
     }
   }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     width: 60px;
     height: 60px;
     padding: 0;
@@ -51,4 +52,4 @@ export const MenuButton = styled.button`
       display: none;
     }
   }
-`
+`;
