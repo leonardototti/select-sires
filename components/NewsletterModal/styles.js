@@ -20,6 +20,10 @@ export const NewsletterTitle = styled.h3`
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 10px;
+
+  @media (max-width: 576px) {
+    margin-top: 0;
+  }
 `;
 
 export const NewsletterSubTitle = styled.p`
