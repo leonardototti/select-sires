@@ -1,5 +1,5 @@
-import { Container, Col, Row } from 'react-bootstrap'
-import { Section, Select } from './styles'
+import { Container, Col, Row } from "react-bootstrap";
+import { Section, Select } from "./styles";
 
 export default function SearchSection() {
   return (
@@ -10,22 +10,41 @@ export default function SearchSection() {
           <Row>
             <Col md={6}>
               <Select>
-                <img src="/icons/searchbull01.svg" width="70px" height="auto" alt="Ícone de touros de corte" />
+                <img
+                  src="/icons/searchbull01.svg"
+                  width="70px"
+                  height="auto"
+                  alt="Ícone de touros de corte"
+                />
                 <span>Touros corte</span>
-                <img src="/icons/search-arrow-down.svg" className="arrow-down" width="10px" height="auto" />
+                <img
+                  src="/icons/search-arrow-down.svg"
+                  className="arrow-down"
+                  width="10px"
+                  height="auto"
+                />
               </Select>
             </Col>
             <Col md={6}>
-              <Select >
-                <img src="/icons/searchbull02.svg" width="70px" height="auto" alt="Ícone de touros de leite" />
+              <Select>
+                <img
+                  src="/icons/searchbull02.svg"
+                  width="70px"
+                  height="auto"
+                  alt="Ícone de touros de leite"
+                />
                 <span>Touros leite</span>
-                <img src="/icons/search-arrow-down.svg" className="arrow-down" width="10px" height="auto" />
+                <img
+                  src="/icons/search-arrow-down.svg"
+                  className="arrow-down"
+                  width="10px"
+                  height="auto"
+                />
               </Select>
             </Col>
           </Row>
-
         </Container>
       </Section>
     </>
-  )
+  );
 }

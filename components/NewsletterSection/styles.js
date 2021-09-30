@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Section = styled.section`
   width: 100%;
@@ -13,27 +13,27 @@ export const Section = styled.section`
   }
 
   .container {
-    background-image: url('/newsletter-background.svg');
+    background-image: url("/newsletter-background.svg");
     background-repeat: no-repeat;
     background-position: center left calc(50% - 195px);
     padding: 70px 0px;
   }
 
-  @media(max-width: 992px) {
+  @media (max-width: 992px) {
     .container {
       background-size: 50%;
       background-position: center left calc(50% - 170px);
     }
   }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     .container {
       background-size: 60%;
       background-position: center left calc(50% - 100px);
     }
   }
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     padding: 40px 0px 20px;
 
     .container {
@@ -42,14 +42,14 @@ export const Section = styled.section`
       padding: 20px 0px 50px;
     }
   }
-`
+`;
 
 export const NewsletterContent = styled.div`
   width: 100%;
   position: absolute;
   top: 0;
   right: 0;
-`
+`;
 
 export const NewsletterTitle = styled.h2`
   color: #fff;
@@ -59,10 +59,10 @@ export const NewsletterTitle = styled.h2`
   margin-bottom: 10px;
   text-align: center;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     font-size: 24px;
   }
-`
+`;
 
 export const NewsletterSubTitle = styled.h3`
   color: #fff;
@@ -74,14 +74,14 @@ export const NewsletterSubTitle = styled.h3`
   margin-top: 0;
   margin-bottom: 40px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
     margin-bottom: 30px;
   }
-`
+`;
 
 export const NewsletterJoin = styled.a`
   background-color: #fff;
@@ -90,7 +90,8 @@ export const NewsletterJoin = styled.a`
   display: block;
   cursor: pointer;
   user-select: none;
-  transition: transform 0.3s ease-in-out, background-color 0.2s, border-color 0.2s, color 0.3s;
+  transition: transform 0.3s ease-in-out, background-color 0.2s,
+    border-color 0.2s, color 0.3s;
   border: 2px solid transparent;
 
   color: #ed1c24;
@@ -110,7 +111,7 @@ export const NewsletterJoin = styled.a`
     color: #fff;
   }
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     padding: 20px 75px;
   }
-`
+`;

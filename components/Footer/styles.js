@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Section = styled.footer`
   background-color: #000;
@@ -6,7 +6,7 @@ export const Section = styled.footer`
   text-align: center;
   position: relative;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     padding: 50px 10px;
 
     hr {
@@ -24,7 +24,7 @@ export const Section = styled.footer`
     border-color: #1a1a1a;
     margin-bottom: 15px;
   }
-`
+`;
 
 export const FooterTitle = styled.h2`
   color: #fff;
@@ -33,10 +33,10 @@ export const FooterTitle = styled.h2`
   font-size: 30px;
   margin-bottom: 10px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     font-size: 24px;
   }
-`
+`;
 
 export const FooterAddress = styled.h3`
   color: #949393;
@@ -45,13 +45,13 @@ export const FooterAddress = styled.h3`
   font-size: 18px;
   margin-bottom: 25px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     font-size: 16px;
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
-`
+`;
 
 export const FooterAddressButton = styled.a`
   background-color: #333;
@@ -71,9 +71,9 @@ export const FooterAddressButton = styled.a`
   text-decoration: none;
 
   border: 2px solid transparent;
-  transition: border .5s;
+  transition: border 0.5s;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     margin-bottom: 50px;
   }
 
@@ -84,7 +84,7 @@ export const FooterAddressButton = styled.a`
   img {
     margin-left: 10px;
   }
-`
+`;
 
 export const FooterPhoneTitle = styled.p`
   color: #fff;
@@ -94,7 +94,7 @@ export const FooterPhoneTitle = styled.p`
   line-height: 1.429;
   text-transform: uppercase;
   margin-bottom: 0;
-`
+`;
 
 export const FooterPhone = styled.a`
   color: #ed1c24;
@@ -108,10 +108,10 @@ export const FooterPhone = styled.a`
   cursor: pointer;
   text-decoration: none;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     margin-bottom: 40px;
   }
-`
+`;
 
 export const FooterPageLinks = styled.ul`
   display: flex;
@@ -121,16 +121,15 @@ export const FooterPageLinks = styled.ul`
   list-style: none;
   margin-top: 25px;
   margin-bottom: 55px;
-  padding-left: 0!important;
+  padding-left: 0 !important;
   row-gap: 10px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     display: none;
   }
-`
+`;
 
 export const FooterPageLink = styled.li`
-  
   a {
     font-family: Inter;
     font-weight: 400;
@@ -144,20 +143,20 @@ export const FooterPageLink = styled.li`
       color: #fff;
     }
   }
-`
+`;
 
 export const FooterSocialLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
-`
+`;
 
 export const FooterSocialLink = styled.a`
   padding: 10px;
   margin: 5px;
   user-select: none;
-`
+`;
 
 export const FooterCopyright = styled.div`
   display: flex;
@@ -165,7 +164,7 @@ export const FooterCopyright = styled.div`
   justify-content: center;
   user-select: none;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     margin-top: 180px;
   }
 
@@ -173,18 +172,18 @@ export const FooterCopyright = styled.div`
     padding: 10px 20px;
 
     &:hover img {
-      filter: brightness(2) drop-shadow(0px 0px 3px rgba(255,255,255, 0.6));
+      filter: brightness(2) drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.6));
     }
   }
 
   img {
-    transition: filter .5s;
+    transition: filter 0.5s;
   }
-`
+`;
 
 export const LanguageSelector = styled.button`
   background: transparent;
-  border: 2px solid rgba(255,255,255,0.102);
+  border: 2px solid rgba(255, 255, 255, 0.102);
   border-radius: 5px;
   padding: 15px 17px;
   position: absolute;
@@ -202,7 +201,7 @@ export const LanguageSelector = styled.button`
   justify-content: flex-start;
   min-width: 170px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     justify-content: center;
     min-width: 70%;
     left: 50%;
@@ -216,7 +215,7 @@ export const LanguageSelector = styled.button`
     transform: translateY(-50%);
     right: 20px;
   }
-`
+`;
 
 export const BackToTop = styled.a`
   position: absolute;
@@ -243,10 +242,10 @@ export const BackToTop = styled.a`
     filter: invert(1);
   }
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     bottom: 50px;
     right: 10px;
-    
+
     width: 60px;
     height: 60px;
     min-width: 60px;
@@ -257,4 +256,4 @@ export const BackToTop = styled.a`
       height: 22px;
     }
   }
-`
+`;

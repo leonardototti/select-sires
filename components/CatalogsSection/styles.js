@@ -1,17 +1,17 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components";
 
 export const Section = styled.section`
   background-color: #000;
   padding: 50px 20px 30px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     padding: 45px 0px 35px;
 
     .container {
-      padding: 0!important;
+      padding: 0 !important;
     }
   }
-  
+
   img {
     user-select: none;
     pointer-events: none;
@@ -39,7 +39,7 @@ export const Section = styled.section`
       opacity: 1;
     }
   }
-`
+`;
 
 export const CatalogTitle = styled.h2`
   color: #fff;
@@ -49,11 +49,11 @@ export const CatalogTitle = styled.h2`
   margin-top: 0;
   margin-bottom: 35px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     font-size: 24px;
     text-align: center;
   }
-`
+`;
 
 export const CatalogDownload = styled.a`
   color: #fff;
@@ -79,12 +79,12 @@ export const CatalogDownload = styled.a`
   background-color: #ed1c24;
   padding: 50px 15px 47px;
 
-  transition: opacity .5s;
-`
+  transition: opacity 0.5s;
+`;
 
 export const SliderButtonsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-`
+`;

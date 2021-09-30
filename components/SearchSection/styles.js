@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Section = styled.section`
   background-color: #f8f8f8;
@@ -14,17 +14,16 @@ export const Section = styled.section`
     margin-bottom: 25px;
   }
 
-  
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     .col-md-6:first-child {
       margin-bottom: 20px;
     }
 
     .col-md-6 {
-      padding: 0!important;
+      padding: 0 !important;
     }
   }
-`
+`;
 
 export const Select = styled.button`
   border: 0;
@@ -54,7 +53,7 @@ export const Select = styled.button`
     transform: translateY(-50%);
   }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     background-color: #eeeeee;
   }
-`
+`;
