@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Section = styled.section`
-  background-image: url('/about-pattern.png');
+  background-image: url("/about-pattern.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@ export const Section = styled.section`
   align-items: center;
   justify-content: center;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     padding: 60px 20px 70px;
   }
 
@@ -21,7 +21,7 @@ export const Section = styled.section`
     align-items: center;
     justify-content: center;
   }
-`
+`;
 
 export const AboutTitle = styled.h2`
   color: #ed1c24;
@@ -33,10 +33,10 @@ export const AboutTitle = styled.h2`
   text-align: center;
   margin-bottom: 50px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     margin-bottom: 25px;
   }
-`
+`;
 
 export const AboutSubtitle = styled.h3`
   color: #000;
@@ -48,11 +48,11 @@ export const AboutSubtitle = styled.h3`
   max-width: 950px;
   margin: 0 auto 50px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     font-size: 17px;
     margin: 0 auto 25px;
   }
-`
+`;
 
 export const AboutDescription = styled.p`
   color: #686868;
@@ -64,10 +64,10 @@ export const AboutDescription = styled.p`
   max-width: 780px;
   margin: 0 auto 50px;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     display: none;
   }
-`
+`;
 
 export const AboutButton = styled.a`
   background-color: #ed1c24;
@@ -76,7 +76,8 @@ export const AboutButton = styled.a`
   display: block;
   cursor: pointer;
   user-select: none;
-  transition: transform 0.3s ease-in-out, background-color 0.2s, border-color 0.2s, color 0.3s;
+  transition: transform 0.3s ease-in-out, background-color 0.2s,
+    border-color 0.2s, color 0.3s;
   border: 2px solid transparent;
 
   color: #fff;
@@ -85,6 +86,12 @@ export const AboutButton = styled.a`
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+
+  @media (max-width: 400px) {
+    padding: 18px 20px;
+    width: 90%;
+  }
 
   &:active {
     transform: scale(1.05);
@@ -95,4 +102,4 @@ export const AboutButton = styled.a`
     border-color: #ed1c24;
     color: #ed1c24;
   }
-`
+`;

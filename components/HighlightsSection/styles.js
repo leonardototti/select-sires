@@ -31,7 +31,7 @@ export const Section = styled.section`
     left: 50px;
     bottom: -90px;
     text-align: left;
-    width: fit-content;
+    width: fit-content !important;
 
     @media (max-width: 576px) {
       left: 50% !important;
