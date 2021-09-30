@@ -1,6 +1,13 @@
-import { Section, SectionTitle, SelectStateContainer, SelectState, ToggleMap } from './styles'
-import { Container } from 'react-bootstrap'
-import { useState } from 'react'
+import {
+  Section,
+  SectionTitle,
+  SelectStateContainer,
+  SelectState,
+  ToggleMap,
+} from "./styles";
+import { Container } from "react-bootstrap";
+import { useState } from "react";
+import RepresentativeMap from "../RepresentativeMap";
 
 export default function RepresentativesSection() {
   const [showMap, setShowMap] = useState(false);
@@ -19,10 +26,13 @@ export default function RepresentativesSection() {
             <img src="/icons/map-arrow-down.png" />
           </SelectState>
         </SelectStateContainer>
+        {showMap ? <RepresentativeMap /> : ""}
         <div className="toggle-map-container">
-          <ToggleMap onClick={handleToggleShowMap}>{showMap ? 'Ocultar mapa' : 'Exibir mapa'}</ToggleMap>
+          <ToggleMap onClick={handleToggleShowMap}>
+            {showMap ? "Ocultar mapa" : "Exibir mapa"}
+          </ToggleMap>
         </div>
       </Container>
     </Section>
-  )
+  );
 }

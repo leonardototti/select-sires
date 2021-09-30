@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Section = styled.section`
   display: flex;
@@ -8,8 +8,8 @@ export const Section = styled.section`
   padding: 50px 20px 15px;
   background-color: #000;
 
-  @media(max-width: 576px) {
-    padding: 30px 20px 15px;
+  @media (max-width: 576px) {
+    padding: 30px 0px 15px;
   }
 
   .toggle-map-container {
@@ -17,7 +17,7 @@ export const Section = styled.section`
     align-items: center;
     justify-content: center;
   }
-`
+`;
 
 export const SectionTitle = styled.h2`
   color: #fff;
@@ -26,16 +26,16 @@ export const SectionTitle = styled.h2`
   font-size: 30px;
   text-align: center;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     font-size: 24px;
   }
-`
+`;
 
 export const SelectStateContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`
+`;
 
 export const SelectState = styled.button`
   outline: none;
@@ -53,17 +53,18 @@ export const SelectState = styled.button`
   cursor: pointer;
   user-select: none;
 
-  @media(max-width: 576px) {
+  @media (max-width: 576px) {
     font-size: 16px;
+    margin-bottom: 0;
   }
 
   img {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) ;
+    transform: translateY(-50%);
     right: 0;
   }
-`
+`;
 
 export const ToggleMap = styled.a`
   color: #fff;
@@ -76,4 +77,4 @@ export const ToggleMap = styled.a`
   padding: 25px 30px;
   cursor: pointer;
   user-select: none;
-`
+`;
